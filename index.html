@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>TIC TAC TOE</h1>
+    </div>
+    <div id="mid">
+        <table id="scorecard">
+            <tr>
+                <td>PLAYER 1</td>
+                <td>PLAYER 2</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td id="p1"></td>
+                <td id="p2"></td>
+            </tr>
+
+        </table>
+    </div>
+    <div id="body">
+        <table>
+            <tr>
+                <td><button onclick="press(this , 0)"></button>  </td>
+                <td><button onclick="press(this , 1)"></button>  </td>
+                <td><button onclick="press(this , 2)"></button>  </td>
+            </tr>
+            <tr>
+                <td><button onclick="press(this , 3)"></button>  </td>
+                <td><button onclick="press(this , 4)"></button>  </td>
+                <td><button onclick="press(this , 5)"></button>  </td>
+            </tr>
+            <tr>
+                <td><button onclick="press(this , 6)"></button>  </td>
+                <td><button onclick="press(this , 7)"></button>  </td>
+                <td><button onclick="press(this , 8)"></button>  </td>
+            </tr>
+           
+        </table>
+    </div>
+    <button onclick="reset()" id="rst">RESET</button>
+    <button onclick="newGame()" id="newGameBtn">NEW GAME</button>
+</body>
+</html>
